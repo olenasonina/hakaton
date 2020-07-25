@@ -16,12 +16,12 @@ class CreateAdvertisementesTable extends Migration
         Schema::create('advertisementes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('compani_id')->unsigned();
-            $table->integer('type__contract_id')->unsigned();
-            $table->integer('type__vacation_id')->unsigned();
-            $table->integer('language_id')->unsigned();
-            $table->integer('categorie_id')->unsigned();
-            $table->text('description');
+            $table->foreign('compani_id')->references('id')->on('companies');
+            $table->foreign('type__contract_id')->references('id')->on('type__contractes');
+            $table->foreign('type__vacation_id')->references('id')->on('type__vacations');
+            $table->foreign('language_id')->references('id')->on('languages');
+            $table->foreign('categorie_id')->references('id')->on('categories');
+            $table->text('description')->nullable(true);
             $table->string('vacation');
             $table->timestamps();
         });

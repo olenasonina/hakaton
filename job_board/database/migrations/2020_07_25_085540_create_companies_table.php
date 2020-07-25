@@ -20,7 +20,7 @@ class CreateCompaniesTable extends Migration
             $table->string('email');
             $table->string('tel');
             $table->string('logo');
-            $table->longText('description');
+            $table->longText('description')->nullable(true);
             $table->timestamps();
         });
     }
