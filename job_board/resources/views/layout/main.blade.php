@@ -9,8 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url(elixir('css/css/bootstrap.min.css')) }}">
 </head>
 
 <body>
@@ -39,7 +38,7 @@
             </nav>
             <hr>
             <div class="block-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla labore eligendi molestiae debitis natus qui beatae aperiam blanditiis cupiditate ex dignissimos, animi ab error voluptatem magnam impedit vitae sunt deleniti fugit placeat! Iste esse inventore placeat illum optio blanditiis delectus distinctio ut, temporibus reprehenderit beatae molestiae? Eius, incidunt vel maxime harum omnis neque unde molestiae fugiat, culpa dolores voluptatibus eum consectetur esse quo! Quidem consequatur sequi nam recusandae illo architecto ullam exercitationem praesentium quam provident perferendis obcaecati, repellendus vel debitis inventore quaerat animi possimus earum ipsam voluptates! Iusto expedita ipsam unde laborum culpa, quia nemo voluptatem dolores magnam maxime? Pariatur id illum, quos recusandae culpa quis nam autem veritatis at facere dolorem nostrum sequi nemo enim. Fuga nesciunt odit provident et veritatis perspiciatis magni quam amet eaque quaerat, ducimus esse consequuntur enim at omnis officia maxime architecto expedita deserunt aperiam consequatur animi optio? Voluptates doloribus error sunt veniam earum itaque dignissimos, nihil, iure adipisci necessitatibus quisquam. Repellendus iste, dignissimos consequatur blanditiis nemo eligendi eum quos debitis aut unde nam ipsam autem sunt repudiandae id adipisci. Earum dicta cumque sapiente ab, reprehenderit eveniet dolor temporibus consequatur in quam dolorum iusto amet atque rerum perspiciatis quos? Amet, qui iure? Accusantium, rem.
+                @yield('content')
             </div>
             <hr>
             <footer class="blog-footer flex-content-center">
