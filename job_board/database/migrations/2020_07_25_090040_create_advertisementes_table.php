@@ -14,7 +14,15 @@ class CreateAdvertisementesTable extends Migration
     public function up()
     {
         Schema::create('advertisementes', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('name');
+            $table->integer('compani_id')->unsigned();
+            $table->integer('type__contract_id')->unsigned();
+            $table->integer('type__vacation_id')->unsigned();
+            $table->integer('language_id')->unsigned();
+            $table->integer('categorie_id')->unsigned();
+            $table->text('description');
+            $table->string('vacation');
             $table->timestamps();
         });
     }
